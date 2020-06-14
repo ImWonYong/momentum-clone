@@ -72,7 +72,7 @@ function paintToDo(text) {
   const span = document.createElement("span");
   const newId = toDos.length + 1;
   const image = new Image();
-  image.src = `./images/square.svg`;
+  image.src = `https://raw.githubusercontent.com/ImWonYong/momentum-clone/02cbddcd25d64c51f75b7bc1e06f144ba79aa7a7/Images/square.svg`;
   image.alt = "square.svg";
   image.addEventListener("click", finishToDo);
   image.classList.add("disappear");
