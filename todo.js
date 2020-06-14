@@ -47,7 +47,7 @@ function finishToDo(event) {
   const li = event.target.parentNode;
   const img = event.target;
   if (img.alt === "square.svg") {
-    img.src = `./images/square-check.svg`;
+    img.src = `https://raw.githubusercontent.com/ImWonYong/momentum-clone/02cbddcd25d64c51f75b7bc1e06f144ba79aa7a7/Images/square-check.svg`;
     img.alt = "square-check.svg";
     img.style.width = "18px";
     li.childNodes.forEach((child) => {
@@ -56,7 +56,7 @@ function finishToDo(event) {
       }
     });
   } else {
-    img.src = `./images/square.svg`;
+    img.src = `https://raw.githubusercontent.com/ImWonYong/momentum-clone/02cbddcd25d64c51f75b7bc1e06f144ba79aa7a7/Images/square.svg`;
     img.alt = "square.svg";
     li.childNodes.forEach((child) => {
       if (child.tagName === "SPAN") {
