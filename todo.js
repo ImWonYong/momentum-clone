@@ -115,9 +115,21 @@ function loadToDos() {
   }
 }
 
+function handleContainerEnter() {
+  span.classList.remove("disappear");
+  span.classList.add("show");
+}
+
+function handleContainerLeave() {
+  span.classList.remove("show");
+  span.classList.add("disappear");
+}
+
 function init() {
   loadToDos();
   toDoForm.addEventListener("submit", handleSubmit);
+  toDoContainer.addEventListener("mouseenter", handleContainerEnter);
+  toDoContainer.addEventListener("mouseleave", handleContainerLeave);
 }
 
 init();
