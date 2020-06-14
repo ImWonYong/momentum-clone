@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Somthing</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="momentom-container">
+      <!-- clock라고만 쓰지 않고 css와 js에서 둘다 동일한 이름을 사용하고 싶기 떄문에 -->
+      <section class="greeting-container">
+        <div class="js-weather">
+        </div>
+        <div class="js-clock">
+          <h1>00:00</h1>
+        </div>
+        <form class="js-form form">
+          <input type="text" name="username" autocomplete="off" required />
+          <label for="username" class="label">
+            <span class="content">What is your name?</span>
+          </label>
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+      </section>
+      <section
+        class="todo-container"
+        draggable="true""
+      >
+        <form class="js-toDoForm">
+          <input type="text" name="toDos" autocomplete="off" required />
+          <label for="toDos" class="label">
+            <span class="content">Write a to do</span>
+          </label>
+        </form>
+        <ul class="js-toDoList"></ul>
+        <span class='dragMe'>Drag me!</span>
+      </section>
+    </main>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+    <script src='dragDrop.js'></script>
+    <script src="https://kit.fontawesome.com/68ddf6e553.js" crossorigin="anonymous"></script>
+  </body>
+</html>
