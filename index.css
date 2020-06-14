@@ -112,9 +112,11 @@ form input:valid + .label::after {
   transform: translateX(0%);
 }
 
-.form,
-.greetings {
+.form {
   display: none;
+}
+
+.greetings {
   border-bottom: 2px solid white;
 }
 
