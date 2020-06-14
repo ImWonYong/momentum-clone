@@ -115,6 +115,9 @@ form input:valid + .label::after {
 .form,
 .greetings {
   display: none;
+}
+
+.greetings {
   border-bottom: 2px solid white;
 }
 

@@ -89,6 +89,7 @@ function paintToDo(text) {
   li.addEventListener("mouseenter", handleMouseenter);
   li.addEventListener("mouseleave", handleMouseleave);
   toDoList.appendChild(li);
+
   const toDoObj = {
     text: text,
     id: newId,
